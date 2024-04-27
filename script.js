@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
@@ -27,16 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // Select the hamburger menu and navigation links
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Add event listener to the hamburger menu
+    hamburgerMenu.addEventListener('click', () => {
+        // Toggle the 'show' class on the navigation links
+        navLinks.classList.toggle('show');
+        // Toggle the 'open' class on the hamburger menu
+        hamburgerMenu.classList.toggle('open');
+    });
 });
-// script.js
 
-// Select the hamburger menu and navigation links
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+// JavaScript for toggling mobile menu visibility
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
-// Add event listener to the hamburger menu
-hamburgerMenu.addEventListener('click', () => {
-    // Toggle the 'show' class on the navigation links
-    navLinks.classList.toggle('show');
+    // Toggle mobile menu visibility when hamburger menu is clicked
+    hamburgerMenu.addEventListener('click', function() {
+        mobileMenu.classList.toggle('show');
+    });
 });
 

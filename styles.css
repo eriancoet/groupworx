@@ -14,10 +14,10 @@ nav {
     background-color: #fff;
     color: #727272;
     transition: top 0.3s;
-    z-index: 1000;
+    z-index: 1000; /* Increase the z-index value */
     justify-content: space-between;
-
 }
+
 
 .logo img {
     width: 150px; /* Set the width of the logo */
@@ -56,38 +56,44 @@ nav {
     color: #eccf12;
    
 }
+.dropdown {
+    position: relative;
 
-/* Drop down menu item */
+}
+
+
+
 .dropdown-content {
     opacity: 0; /* Initially hide the dropdown content */
     visibility: hidden; /* Hide the dropdown content */
     position: absolute;
     background-color: #011D38;
-    min-width: 120px;
-    z-index: 100;
+    min-width: 150px;
+    z-index: 2000; /* Ensure the dropdown menu appears above the navbar */
     border-radius: 10px; /* Add rounded corners */
     transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for opacity and visibility */
-}
-
-.dropdown-toggle:hover + .dropdown-content {
-    opacity: 1; /* Fade in the dropdown content */
-    visibility: visible; /* Show the dropdown content */
+    top: 100%; /* Position the dropdown below the toggle */
+    left: 0; /* Align the dropdown with the left edge of the toggle */
 }
 
 .dropdown-content a {
-    color: #f0f0f0 !important; /* Set color to a light shade of gray */
-    padding: 12px 16px;
+    color: #f0f0f0 !important;
+    padding: 12px 16px; /* Add padding to the links */
     display: block;
     text-decoration: none;
 }
 
-.dropdown-content a:hover {
-    color: #eccf12 !important; /* Set color to yellow on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Add background color on hover */
-    /* Add any other hover styles if needed */
+.dropdown:hover .dropdown-content {
+    opacity: 1; /* Show the dropdown content on hover */
+    visibility: visible; /* Show the dropdown content on hover */
 }
 
 
+
+
+.dropdown-content a:hover {
+    color: #eccf12 !important; /* Set color to yellow on hover */
+}
 
 
 
@@ -125,13 +131,16 @@ nav {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #727272;;
+    background-color: #000000;;
     margin: 3px 0;
 }
+
 
 .content {
     margin: 0 auto;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1 {
@@ -140,6 +149,10 @@ h1 {
     margin-top: 100px;
     font-family: "Poppins", sans-serif;
     font-size: 32px;
+}
+
+p {
+    font-size: 16px !important;
 }
 
 
@@ -206,6 +219,13 @@ h1 {
 
 p {
     text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 28px;
 }
 
 .hr-dv {
@@ -222,6 +242,75 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, .1);
     width: 100%; /* Make sure the hr spans the entire width of its container */
 }
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.black {
+    color: black;
+}
+
+.column {
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 30px;
+    min-height: 120px;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+
+
+.icon-svg {
+    width: 55px;
+    height: 55px;
+    background-color: #ffd802; 
+    line-height: 95px;
+    padding: 20px;
+    border-radius: 50%; 
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .button-anchor-nav {
+        display: none;
+    }
+
+    .three-columns {
+        display: block;
+       
+    }
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
 
 
 
@@ -245,5 +334,14 @@ hr {
 
     .button-anchor-nav {
         display: none;
+    }
+
+    .three-columns {
+        display: block;
+       
+    }
+
+    .column {
+        margin-bottom: 20px;
     }
 }
