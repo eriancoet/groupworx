@@ -40,14 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// JavaScript for toggling mobile menu visibility
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
-
-    // Toggle mobile menu visibility when hamburger menu is clicked
-    hamburgerMenu.addEventListener('click', function() {
-        mobileMenu.classList.toggle('show');
-    });
-});
 
