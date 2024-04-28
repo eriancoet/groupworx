@@ -1,9 +1,15 @@
 /* styles.css */
+
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    color:#727272;
+    color: #727272;
 }
+
+
+/* Navbar */
+
 
 nav {
     font-family: "Poppins", sans-serif;
@@ -15,14 +21,17 @@ nav {
     background-color: #fff;
     color: #727272;
     transition: top 0.3s;
-    z-index: 1000; /* Increase the z-index value */
+    z-index: 1000;
+    /* Increase the z-index value */
     justify-content: space-between;
 }
 
 
 .logo img {
-    width: 150px; /* Set the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    /* Set the width of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .nav-links {
@@ -30,11 +39,14 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    flex-grow: 1; /* Allow the menu to grow and take up remaining space */
+    flex-grow: 1;
+    /* Allow the menu to grow and take up remaining space */
     display: flex;
-    justify-content: center; /* Center the menu horizontally */
+    justify-content: center;
+    /* Center the menu horizontally */
     align-items: center;
-    margin-left: auto; /* Push nav links to the left as much as possible */
+    margin-left: auto;
+    /* Push nav links to the left as much as possible */
 }
 
 
@@ -42,8 +54,10 @@ nav {
 
 .arrow {
     font-family: "Poppins", sans-serif;
-    font-size: 0.5em; /* Adjust the size of the arrow */
-    margin-left: 5px; /* Add some space between the text and the arrow */
+    font-size: 0.5em;
+    /* Adjust the size of the arrow */
+    margin-left: 5px;
+    /* Add some space between the text and the arrow */
 }
 
 .nav-links li {
@@ -52,14 +66,16 @@ nav {
 }
 
 .nav-links li a {
-    color: #727272;;
+    color: #727272;
+    ;
     text-decoration: none;
 }
 
 .nav-links li a:hover {
     color: #eccf12;
-   
+
 }
+
 .dropdown {
     position: relative;
 
@@ -68,38 +84,45 @@ nav {
 
 
 .dropdown-content {
-    opacity: 0; /* Initially hide the dropdown content */
-    visibility: hidden; /* Hide the dropdown content */
+    opacity: 0;
+    /* Initially hide the dropdown content */
+    visibility: hidden;
+    /* Hide the dropdown content */
     position: absolute;
     background-color: #011D38;
     min-width: 150px;
-    z-index: 2000; /* Ensure the dropdown menu appears above the navbar */
-    border-radius: 10px; /* Add rounded corners */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for opacity and visibility */
-    top: 100%; /* Position the dropdown below the toggle */
-    left: 0; /* Align the dropdown with the left edge of the toggle */
+    z-index: 2000;
+    /* Ensure the dropdown menu appears above the navbar */
+    border-radius: 10px;
+    /* Add rounded corners */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Add transition for opacity and visibility */
+    top: 100%;
+    /* Position the dropdown below the toggle */
+    left: 0;
+    /* Align the dropdown with the left edge of the toggle */
 }
 
 .dropdown-content a {
     color: #f0f0f0 !important;
-    padding: 12px 16px; /* Add padding to the links */
+    padding: 12px 16px;
+    /* Add padding to the links */
     display: block;
     text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content {
-    opacity: 1; /* Show the dropdown content on hover */
-    visibility: visible; /* Show the dropdown content on hover */
+    opacity: 1;
+    /* Show the dropdown content on hover */
+    visibility: visible;
+    /* Show the dropdown content on hover */
 }
-
-
 
 
 .dropdown-content a:hover {
-    color: #eccf12 !important; /* Set color to yellow on hover */
+    color: #eccf12 !important;
+    /* Set color to yellow on hover */
 }
-
-
 
 
 .button-anchor-nav {
@@ -112,11 +135,13 @@ nav {
     border: solid;
     border-width: 1px;
     border-radius: 50px;
-    margin: 0 10px; /* Add margin for spacing */
+    margin: 0 10px;
+    /* Add margin for spacing */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add transition */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    /* Add transition */
 }
 
 .button-anchor-nav:hover {
@@ -125,21 +150,25 @@ nav {
     color: #001D38;
 }
 
+/* hamburger menu */
 
 .hamburger-menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    justify-self: flex-end; /* Align the hamburger menu to the right */
+    justify-self: flex-end;
+    /* Align the hamburger menu to the right */
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #000000;;
+    background-color: #000000;
+    ;
     margin: 3px 0;
 }
 
+/* Modules */
 
 .content {
     margin: 0 auto;
@@ -151,12 +180,22 @@ nav {
 h1 {
     display: block;
     margin-top: 100px;
+
     font-size: 32px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Poppins", sans-serif;
     color: #001D38;
+}
+
+.spacing {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 p {
@@ -173,8 +212,10 @@ p {
 .grid-container {
     display: flex;
     justify-content: center;
-    position: relative; /* Position relative to the content */
-    top: 20px; /* Adjust as needed */
+    position: relative;
+    /* Position relative to the content */
+    top: 20px;
+    /* Adjust as needed */
 }
 
 
@@ -192,19 +233,24 @@ p {
     background-color: #011D38;
     border: none;
     border-radius: 50px;
-    margin: 0 10px; /* Add margin for spacing */
-    display: inline-block; /* Ensure the button takes up only the necessary space */
-    transition: transform 0.3s, background-color 0.3s; /* Add transition for transform and background color */
+    margin: 0 10px;
+    /* Add margin for spacing */
+    display: inline-block;
+    /* Ensure the button takes up only the necessary space */
+    transition: transform 0.3s, background-color 0.3s;
+    /* Add transition for transform and background color */
 }
 
 .button-anchor:hover {
     background-color: #eccf12;
     color: #001D38;
-    transform: scale(1.1); /* Scale up the button on hover */
+    transform: scale(1.1);
+    /* Scale up the button on hover */
 }
 
 .button-anchor:not(:hover) {
-    transform: scale(1); /* Reset the scale for non-hovered buttons */
+    transform: scale(1);
+    /* Reset the scale for non-hovered buttons */
 }
 
 
@@ -213,14 +259,19 @@ p {
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: -50px auto 0; /* Adjust the margin-top to move the image closer to the header */
-    text-align: center; /* Center the image horizontally */
-    z-index: -1; /* Move the image behind other elements */
+    margin: -50px auto 0;
+    /* Adjust the margin-top to move the image closer to the header */
+    text-align: center;
+    /* Center the image horizontally */
+    z-index: -1;
+    /* Move the image behind other elements */
 }
 
 .img-size {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .Header {
@@ -236,12 +287,22 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     line-height: 28px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 26px;
+    margin-bottom: 13px;
+    font-family: "Poppins", sans-serif;
 }
 
 .hr-dv {
-    flex: 0 0 80%; /* Set the flex basis to 80% */
-    max-width: 80%; /* Set the max-width to 80% */
-    margin: 0 auto; /* Center the element */
+    flex: 0 0 80%;
+    /* Set the flex basis to 80% */
+    max-width: 80%;
+    /* Set the max-width to 80% */
+    margin: 0 auto;
+    /* Center the element */
     padding-top: 40px;
 }
 
@@ -250,7 +311,8 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, .1);
-    width: 100%; /* Make sure the hr spans the entire width of its container */
+    width: 100%;
+    /* Make sure the hr spans the entire width of its container */
 }
 
 .three-columns {
@@ -278,12 +340,77 @@ hr {
 .icon-svg {
     width: 55px;
     height: 55px;
-    background-color: #ffd802; 
+    background-color: #ffd802;
     line-height: 95px;
     padding: 20px;
-    border-radius: 50%; 
+    border-radius: 50%;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+.hr-pb2 {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.flexbox-2column {
+    display: flex;
+    /* Use flexbox */
+}
+
+.column1 {
+    flex: 1;
+    /* Take up remaining space */
+}
+
+.column2 {
+    flex: 2;
+    margin-left: 50px;
+    padding-left: 50px;
+   
+}
+
+.h2-color {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px !important;
+    color: #001D38;
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.img-size {
+    width: 100%;
+}
+
+.case_bg_1 {
+    background-image: url(./images/study_banner.png);
+    background-size: 100% 100%; /* Stretch the background image to cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.content-base-bg {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
+
+
+
+
+.h2-service {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+   
 }
 
 
@@ -314,11 +441,13 @@ hr {
 
     .three-columns {
         display: block;
-       
+
     }
+
     .column {
         margin-bottom: 20px;
     }
+
     .content {
         margin-left: 30px;
         margin-right: 30px;
@@ -350,12 +479,13 @@ hr {
 
     .three-columns {
         display: block;
-       
+
     }
 
     .column {
         margin-bottom: 20px;
     }
+
     .content {
         margin-left: 15px;
         margin-right: 15px;
