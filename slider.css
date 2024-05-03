@@ -1,36 +1,82 @@
-body{
-    background:#ccc;
-  }
-  .main {
-    font-family:Arial;
-    width:500px;
-    display:block;
-    margin:0 auto;
-  }
-  h3 {
-      background: #fff;
-      color: #3498db;
-      font-size: 36px;
-      line-height: 100px;
-      margin: 10px;
-      padding: 2%;
-      position: relative;
-      text-align: center;
-  }
-  .action{
-    display:block;
-    margin:100px auto;
-    width:100%;
-    text-align:center;
-  }
-  .action a {
-    display:inline-block;
-    padding:5px 10px; 
-    background:#f30;
-    color:#fff;
-    text-decoration:none;
-  }
-  .action a:hover{
-    background:#000;
-  }
+
+
+.main {
+    font-family: Arial;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slide {
+    width: 350px;
+    height: auto;
+    background: #001D38;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: grab;
   
+}
+
+
+.slide a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.slide h4 {
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+}
+
+.slide p {
+    color: #798896;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.action {
+    display: none;
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.action a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f30;
+    color: #fff;
+    text-decoration: none;
+}
+
+.action a:hover {
+    background: #2e0303;
+}
+
+/* Add this CSS to hide the .slider-for visually */
+.slider-for {
+    display: none;
+    /* Hide the slider */
+}
+
+@media (max-width: 800px) {
+    .main {
+        width: 100%;
+        /* Change width to 100% for screens smaller than or equal to 800px */
+    }
+
+
+    .slide {
+        width: 100%;
+        background: #0A2640;
+        color: #ffffff;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: grab;
+    }
+}
