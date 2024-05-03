@@ -179,7 +179,7 @@ nav {
 
 h1 {
     display: block;
-    margin-top: 100px;
+    margin-top: 80px;
 
     font-size: 32px;
 }
@@ -254,18 +254,17 @@ p {
 }
 
 
-
 .image-container {
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: -50px auto 0;
-    /* Adjust the margin-top to move the image closer to the header */
+    margin: -150px auto 0; /* Adjust the margin-top to move the image closer to the header */
     text-align: center;
     /* Center the image horizontally */
     z-index: -1;
     /* Move the image behind other elements */
 }
+
 
 .img-size {
     width: 100%;
@@ -277,6 +276,7 @@ p {
 .Header {
     text-align: center;
 }
+
 
 p {
     text-align: center;
@@ -295,6 +295,7 @@ p {
     margin-bottom: 13px;
     font-family: "Poppins", sans-serif;
 }
+
 
 .hr-dv {
     flex: 0 0 80%;
@@ -413,6 +414,24 @@ hr {
    
 }
 
+.accordion-container {
+    display: flex;
+}
+
+.accordion-column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.smaller {
+    flex-basis: 30%; /* Adjust the width of the smaller column */
+}
+
+.larger {
+    flex-basis: 70%; /* Adjust the width of the larger column */
+}
 
 
 
