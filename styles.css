@@ -453,6 +453,13 @@ hr {
     /* Scale up the button on hover */
 }
 
+i.fas {
+    font-size: 14px;
+    color:#001D38;
+    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome font family */
+    padding-right: 26px;
+}
+
 .accordion-column {
     display:flex;
     margin-top: 50px;
@@ -472,13 +479,14 @@ hr {
 .accordion-item {
     border-bottom: 1px solid;
     border-color:#E8E8E8;
-    margin-bottom: 10px;
+    margin-bottom: 34px;
     margin-right: 20px;
     padding-right: 20px;
 }
 
 .accordion-header {
     background-color: #ffffff;
+    color:#001D38;
     padding: 10px;
     cursor: pointer;
 }
@@ -493,6 +501,7 @@ hr {
 
 .accordion-content {
     text-align: left;
+    color:#011D38;
     width: 400px; /* Set the width to 100% */
     padding: 10px;
     display: none;
