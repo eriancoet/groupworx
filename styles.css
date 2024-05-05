@@ -557,6 +557,23 @@ i.fas {
     z-index: -1;
 }
 
+.trust-container-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+}
+
+.trust-img {
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.trust h2 {
+    margin: 40px 0;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
 
 @media screen and (max-width: 900px) {
     .nav-links {
@@ -711,6 +728,17 @@ i.fas {
         align-items: center;
         text-align: center;
     }
+
+    .accordion-column {
+        display:block;
+        margin-top: 20px;
     }
+    .trust-container-row {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+   
+    }
+ }
 
 
