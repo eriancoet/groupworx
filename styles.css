@@ -584,6 +584,74 @@ i.fas {
     padding-bottom: 10px;
 }
 
+/* footer */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #001D38;
+    margin-top: 105px;
+    margin-bottom: 70px;
+    padding-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.lets_projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    align-items: center; /* Align items vertically in the center of the grid */
+}
+
+.lets_projects a {
+    color:#eccf12;
+    text-decoration: none;
+}
+
+
+a.footer-big {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    color: #fff;
+    display: block;
+
+
+}
+.slogan {
+    padding-top: 0px;
+}
+
+.phone_number {
+    padding-top: 30px;
+}
+
+.phone_number a {
+    color: #C7C7C7;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.phone_number a:hover {
+    color:#eccf12;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.lets_projects h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color:#fff;
+}
+
+
+
 @media screen and (max-width: 900px) {
     .nav-links {
         display: none;
