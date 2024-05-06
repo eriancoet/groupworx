@@ -665,19 +665,27 @@ a.footer-big {
     padding-right: 0;
 
 }
+
 .content-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 280px repeat(5, 200px);
     grid-gap: 10px;
 }
 
 .footer_widget {
     text-align: left;
-
     font-size: 13px;
     line-height: 32px;
-    width:180px;
+ 
     margin-left: 20px;
+}
+
+.footer_widget p {
+    color: #919191;
+    font-size: 13px !important;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left !important;
 }
 
 .footer_title {
@@ -700,6 +708,10 @@ a.footer-big {
 
 ul {
     list-style-type: none;
+}
+
+.footer a:hover {
+    color:#eccf12;
 }
 
 
