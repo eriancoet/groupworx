@@ -603,8 +603,8 @@ i.fas {
 .lets_projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
-    align-items: center; /* Align items vertically in the center of the grid */
+    grid-gap: 20rem;
+    /* Align items vertically in the center of the grid */
 }
 
 .lets_projects a {
@@ -618,15 +618,20 @@ a.footer-big {
     font-weight: 300 !important;
     color: #fff;
     display: block;
+   
+    margin-right: 0;
 
 
 }
 .slogan {
     padding-top: 0px;
+    margin-left: 0;
 }
 
 .phone_number {
     padding-top: 30px;
+    margin-right: 0;
+    margin-left: 200px;
 }
 
 .phone_number a {
@@ -662,9 +667,59 @@ a.footer-big {
 }
 .content-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
+
+.footer_widget {
+    text-align: left;
+
+    font-size: 13px;
+    line-height: 32px;
+    width:180px;
+    margin-left: 20px;
+}
+
+.footer_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ACCCEC;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    margin-left: 40px;
+
+}
+
+.footer ul li a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.hr-black {
+    flex: 0 0 80%;
+    /* Set the flex basis to 80% */
+    max-width: 80%;
+    /* Set the max-width to 80% */
+    margin: 50px auto;
+    /* Center the element */
+  
+    /* Add padding to adjust spacing */
+    border: none;
+    /* Remove default border */
+    height: 1px;
+    /* Set the height to make it thicker */
+    background-color: black;
+    /* Set the background color to black */
+}
+
 
 @media screen and (max-width: 900px) {
     .nav-links {
